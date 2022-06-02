@@ -1,0 +1,29 @@
+{
+  "name": "@wh/network-fetch",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "吴浩 <wuhao@yuanian.com>",
+  "homepage": "https://github.com/kiwh77/wh-network#readme",
+  "license": "ISC",
+  "main": "lib/network-fetch.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://192.168.12.28:4873"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwh77/wh-network.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/kiwh77/wh-network/issues"
+  }
+}

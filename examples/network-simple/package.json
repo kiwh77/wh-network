@@ -1,0 +1,37 @@
+{
+  "name": "@wh/request",
+  "version": "0.0.1",
+  "description": "请求库",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist;tsc",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "dependencies": {
+    "@jsmini/clone": "^0.4.2",
+    "axios": "^0.21.1",
+    "blueimp-md5": "^2.18.0",
+    "qs": "^6.5.2"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.24",
+    "babel-jest": "^27.0.6",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^27.0.6",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.3",
+    "ts-jest": "^27.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4",
+    "vue": "^2.6.14"
+  }
+}

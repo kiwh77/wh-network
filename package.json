@@ -1,0 +1,39 @@
+{
+  "name": "wh-network",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@commitlint/config-lerna-scopes": "^16.0.0",
+    "@commitlint/cz-commitlint": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "commitizen": "^4.2.4",
+    "commitlint": "^16.0.1",
+    "eslint": "^6.7.2",
+    "husky": "^7.0.4",
+    "lerna-changelog": "^2.2.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  }
+}
